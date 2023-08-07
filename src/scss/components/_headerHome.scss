@@ -80,23 +80,25 @@
         @include pseudo;
         position: absolute;
         left: 0;
-        bottom: 0;
+        bottom: -7px;
         height: 1.5px;
         background: var(--white);
-        width: 0;
+        width: 100%;
+        transform: scale(0, 1);
         transition: all 0.3s ease;
       }
       &.active {
         opacity: 1;
         &::before {
           width: 100%;
+          transform: scale(1, 1);
         }
       }
 
       @include hover {
         opacity: 1;
         &::before {
-          width: 100%;
+          transform: scale(1, 1);
         }
       }
     }

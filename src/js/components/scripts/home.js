@@ -13,7 +13,6 @@ const sliderHome = () => {
       slidesPerView: '1',
       loop: true,
       effect: 'fade',
-      crossFade: false,
       speed: 1500,
       autoplay: {
         delay: 5000,
