@@ -1,0 +1,24 @@
+:root {
+  // base
+  --font-family: "Helvetica", "Aeroport", sans-serif;
+  --content-width: 1890px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  // fonts
+  --font-primary: "Helvetica", sans-serif;
+  --font-secondary: "Aeroport", sans-serif;
+
+  // colors
+  --white: #fff;
+  --white-opacity-50: rgba(255, 255, 255, 0.5);
+  --black: #000000;
+  --beige: #fff8f0;
+  --black-opacity-50: rgba(0, 0, 0, 0.5);
+
+  // z-index
+  --z-header: 5;
+  --z-footer: 5;
+  --z-cookie: 5;
+  --z-menu: 6;
+}
