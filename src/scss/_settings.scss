@@ -32,6 +32,12 @@ img {
   object-fit: cover;
 }
 
+video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
 a {
   text-decoration: none;
 }
@@ -144,4 +150,32 @@ img {
 
 .display-none {
   display: none;
+}
+
+.container-w-header {
+  height: calc(100vh - var(--h-header-desk));
+
+  @include tablet {
+    height: calc(100vh - var(--h-header-tablet));
+  }
+
+  @include mobile {
+    height: calc(100vh - var(--h-header-desk));
+  }
+}
+
+.padding-header {
+  padding-top: var(--h-header-desk);
+
+  @include tablet {
+    padding-top: var(--h-header-tablet);
+  }
+
+  @include mobile {
+    padding-top: var(--h-header-mobile);
+  }
+}
+
+.relative {
+  position: relative;
 }

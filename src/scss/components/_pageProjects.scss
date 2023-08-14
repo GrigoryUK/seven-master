@@ -1,0 +1,290 @@
+.pageProjects {
+  .title {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+
+    @include tablet {
+      gap: 14px;
+      margin-bottom: 20px;
+    }
+
+    @include mobile {
+      gap: 14px;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 180px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 160%;
+      text-transform: uppercase;
+      color: var(--black);
+
+      @include tablet {
+        font-size: 90px;
+      }
+
+      @include mobile {
+        font-size: 35.769px;
+      }
+    }
+
+    .two-line {
+      width: 100%;
+      height: 100%;
+      &::before {
+        @include pseudo;
+        width: 100%;
+        height: 17px;
+        background: var(--black);
+
+        @include tablet {
+          height: 8px;
+        }
+
+        @include mobile {
+          height: 3px;
+        }
+      }
+
+      &::after {
+        @include pseudo;
+        width: 100%;
+        height: 17px;
+        background: var(--black);
+        margin-top: 20px;
+
+        @include tablet {
+          height: 8px;
+          margin-top: 10px;
+        }
+
+        @include mobile {
+          height: 3px;
+          margin-top: 4px;
+        }
+      }
+    }
+  }
+
+  .tabs__projects {
+    margin-bottom: 150px;
+
+    @include tablet {
+      margin-bottom: 70px;
+    }
+
+    &--nav {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      justify-content: space-between;
+      margin-bottom: 60px;
+
+      @include tablet {
+        flex-direction: column;
+        gap: 6px;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-bottom: 50px;
+      }
+
+      @include mobile {
+        gap: 2px;
+        margin-bottom: 20px;
+      }
+    }
+
+    &--item {
+      display: flex;
+      // flex-shrink: 0;
+    }
+
+    &--btn {
+      position: relative;
+      font-size: 46px;
+      font-weight: 700;
+      line-height: 160%;
+      text-transform: uppercase;
+      opacity: 0.5;
+      color: var(--black);
+
+      @include hover {
+        opacity: 1;
+      }
+
+      @include mobile {
+        font-size: 18px;
+        line-height: 150%;
+      }
+
+      &::before {
+        @include pseudo;
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        height: 8px;
+        width: 0%;
+        background: var(--black);
+        transition: all 0.2s ease;
+
+        @include tablet {
+          bottom: 0px;
+          height: 6px;
+        }
+
+        @include mobile {
+          height: 2px;
+        }
+      }
+
+      &.tabs__nav-btn--active {
+        opacity: 1;
+        &::before {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 15px;
+    column-gap: 16px;
+
+    @include tablet {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  &__item {
+    display: flex;
+    transition: all 0.2s ease;
+    align-self: flex-start;
+
+    &--text {
+      position: absolute;
+      left: 20px;
+      bottom: 20px;
+      font-size: 26px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 160%;
+      color: var(--black);
+      transition: all 0.2s ease;
+
+      @include tablet {
+        font-size: 18px;
+        bottom: 16px;
+        left: 15px;
+      }
+
+      @include mobile {
+        bottom: 10px;
+        font-size: 14px;
+      }
+    }
+
+    @include hover {
+      .pageProjects__item--text {
+        opacity: 0.6;
+      }
+    }
+  }
+
+  &__button {
+    .button-breff {
+      width: 100%;
+      @include hover {
+        opacity: 0.6;
+      }
+    }
+    span {
+      transition: all 0.2s ease;
+    }
+    .txt {
+      font-size: 198px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 105%;
+      text-transform: uppercase;
+      color: var(--black);
+      text-align: left;
+
+      @include tablet {
+        font-size: 90px;
+      }
+
+      @include mobile {
+        font-size: 35.769px;
+      }
+    }
+
+    .one {
+      display: block;
+    }
+
+    .word {
+      display: block;
+    }
+
+    .two {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+
+      @include tablet {
+        gap: 14px;
+        margin-bottom: 20px;
+      }
+
+      @include mobile {
+        gap: 14px;
+        margin-bottom: 10px;
+      }
+    }
+
+    .two-line {
+      width: 100%;
+      height: 100%;
+      &::before {
+        @include pseudo;
+        width: 100%;
+        height: 17px;
+        background: var(--black);
+
+        @include tablet {
+          height: 8px;
+        }
+
+        @include mobile {
+          height: 3px;
+        }
+      }
+
+      &::after {
+        @include pseudo;
+        width: 100%;
+        height: 17px;
+        background: var(--black);
+        margin-top: 20px;
+
+        @include tablet {
+          height: 8px;
+          margin-top: 10px;
+        }
+
+        @include mobile {
+          height: 3px;
+          margin-top: 4px;
+        }
+      }
+    }
+  }
+}

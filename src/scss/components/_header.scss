@@ -11,6 +11,45 @@
     padding-top: 20px;
   }
 
+  &.header {
+    position: relative;
+    padding-bottom: 5px;
+
+    @include mobile {
+      padding-bottom: 0;
+    }
+
+    .headerHome__logo {
+      svg {
+        fill: var(--black);
+      }
+    }
+
+    .headerHome__links {
+      a {
+        color: var(--black);
+      }
+    }
+
+    .headerHome__languages {
+      a {
+        &::before {
+          background: var(--black);
+        }
+      }
+    }
+
+    .burger__line {
+      background: var(--black);
+    }
+  }
+
+  &.headerProject {
+    position: absolute;
+
+    --black: #ffff;
+  }
+
   &__container {
     display: flex;
     align-items: center;
@@ -29,6 +68,64 @@
 
       @include mobile {
         width: 130px;
+      }
+    }
+  }
+
+  &__menu {
+    @include tablet {
+      display: none;
+    }
+    ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 70px;
+
+      li {
+        line-height: 1;
+
+        &.menu-item-active {
+          a {
+            opacity: 1;
+            &::before {
+              transform: scale(1, 1);
+            }
+          }
+        }
+      }
+
+      a {
+        position: relative;
+        opacity: 1;
+        color: var(--black);
+        font-size: 14px;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+
+        &::before {
+          @include pseudo;
+          position: absolute;
+          left: 40%;
+          transform: translate(-50%);
+          bottom: -15px;
+          height: 1px;
+          background: var(--black);
+          width: 16px;
+          transform: scale(0, 1);
+          transition: all 0.3s ease;
+        }
+
+        @include hover {
+          opacity: 1;
+          &::before {
+            transform: scale(1, 1);
+          }
+        }
       }
     }
   }
@@ -60,6 +157,7 @@
       color: var(--white);
       font-size: 14px;
       text-transform: uppercase;
+      line-height: 1;
     }
   }
 
@@ -80,8 +178,8 @@
         @include pseudo;
         position: absolute;
         left: 0;
-        bottom: -7px;
-        height: 1.5px;
+        bottom: -15px;
+        height: 1px;
         background: var(--white);
         width: 100%;
         transform: scale(0, 1);

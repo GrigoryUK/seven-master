@@ -1,0 +1,386 @@
+.pageContact {
+  .title {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+
+    @include tablet {
+      gap: 14px;
+      margin-bottom: 50px;
+    }
+
+    @include mobile {
+      gap: 14px;
+      margin-bottom: 30px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 180px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 160%;
+      text-transform: uppercase;
+
+      @include tablet {
+        font-size: 90px;
+      }
+
+      @include mobile {
+        font-size: 35.769px;
+      }
+    }
+
+    .two-line {
+      width: 100%;
+      height: 100%;
+      &::before {
+        @include pseudo;
+        width: 100%;
+        height: 17px;
+        background: var(--black);
+
+        @include tablet {
+          height: 8px;
+        }
+
+        @include mobile {
+          height: 3px;
+        }
+      }
+
+      &::after {
+        @include pseudo;
+        width: 100%;
+        height: 17px;
+        background: var(--black);
+        margin-top: 20px;
+
+        @include tablet {
+          height: 8px;
+          margin-top: 10px;
+        }
+
+        @include mobile {
+          height: 3px;
+          margin-top: 4px;
+        }
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    margin-bottom: 150px;
+
+    @include tablet {
+      margin-bottom: 100px;
+      gap: 50px;
+      flex-direction: column;
+    }
+
+    @include mobile {
+      margin-bottom: 60px;
+    }
+  }
+
+  &__contact {
+    max-width: 1050px;
+    width: 100%;
+
+    .txt {
+      font-size: 23px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 160%;
+
+      @include mobile {
+        font-size: 18px;
+      }
+    }
+
+    span {
+      display: block;
+      max-width: 534px;
+      margin-bottom: 34px;
+
+      @include tablet {
+        margin-bottom: 10px;
+        max-width: 100%;
+      }
+
+      @include mobile {
+        margin-bottom: 20px;
+      }
+    }
+
+    a {
+      color: var(--black);
+
+      @include hover {
+        opacity: 0.7;
+      }
+    }
+  }
+
+  &__feedback {
+    max-width: 810px;
+
+    @include tablet {
+      max-width: 100%;
+    }
+
+    .feedback {
+      &__text {
+        font-size: 23px;
+        margin-bottom: 30px;
+        line-height: 160%;
+        margin-bottom: 30px;
+
+        @include mobile {
+          margin-bottom: 50px;
+          font-size: 18px;
+        }
+      }
+
+      &__slogan {
+        margin-bottom: 70px;
+        font-size: 23px;
+        line-height: 160%;
+        font-weight: 700;
+
+        @include tablet {
+          margin-bottom: 50px;
+        }
+
+        @include mobile {
+          font-size: 18px;
+          margin-bottom: 30px;
+        }
+      }
+
+      &__inputs {
+        display: flex;
+        flex-direction: column;
+        gap: 54px;
+        width: 100%;
+        margin-bottom: 40px;
+
+        @include tablet {
+          gap: 50px;
+        }
+
+        @include mobile {
+          gap: 20px;
+          margin-bottom: 30px;
+        }
+
+        input {
+          outline: none;
+          border: none;
+          border-bottom: 17px solid var(--black);
+          width: 100%;
+          padding-bottom: 20px;
+          font-size: 23px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 160%;
+
+          @include tablet {
+            border-bottom: 9px solid var(--black);
+          }
+
+          @include mobile {
+            font-size: 16px;
+            padding-bottom: 10px;
+            border-bottom: 4px solid var(--black);
+          }
+
+          &::placeholder {
+            opacity: 0.5;
+          }
+
+          @include hover {
+            &::placeholder {
+              opacity: 0.35;
+            }
+          }
+        }
+      }
+
+      &__button {
+        display: flex;
+        gap: 50px;
+        align-items: center;
+        justify-content: space-between;
+
+        @include mobile {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 10px;
+        }
+        button {
+          font-size: 23px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 160%;
+
+          @include mobile {
+            font-size: 18px;
+          }
+
+          @include hover {
+            opacity: 0.7;
+          }
+        }
+
+        .warning {
+          position: absolute;
+          color: var(--red-800);
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 160%;
+          bottom: -50px;
+
+          @include mobile {
+            font-size: 12px;
+            bottom: -34px;
+          }
+        }
+
+        .policy {
+          text-align: right;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 140%;
+          line-height: 1.1;
+          opacity: 0.5;
+
+          @include mobile {
+            text-align: left;
+          }
+          a {
+            color: var(--black);
+
+            @include hover {
+              opacity: 1;
+            }
+          }
+        }
+      }
+
+      &__success {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: var(--white);
+        z-index: var(--z-form-success);
+        top: 0;
+        left: 0;
+
+        .border {
+          padding-top: 56px;
+          border-bottom: 17px solid var(--black);
+          margin-bottom: 40px;
+
+          @include tablet {
+            border-bottom: 9px solid var(--black);
+          }
+
+          @include mobile {
+            padding-top: 36px;
+            border-bottom: 4px solid var(--black);
+          }
+        }
+
+        .text {
+          font-size: 56px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 140%;
+          margin-bottom: 50px;
+
+          @include mobile {
+            font-size: 28px;
+            margin-bottom: 40px;
+          }
+        }
+
+        button {
+          font-size: 23px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 160%; /* 36.8px */
+          text-transform: uppercase;
+
+          @include mobile {
+            font-size: 18px;
+          }
+
+          @include hover {
+            opacity: 0.6;
+          }
+        }
+      }
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    justify-content: space-between;
+    padding-bottom: 20px;
+
+    @include mobile {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+    }
+
+    .copy {
+      font-size: 23px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 160%;
+
+      @include mobile {
+        font-size: 12px;
+      }
+    }
+
+    .social {
+      display: flex;
+      align-items: center;
+      gap: 205px;
+
+      @include tablet {
+        gap: 50px;
+      }
+
+      @include mobile {
+        gap: 16px;
+        justify-content: space-between;
+        width: 100%;
+      }
+
+      a {
+        font-size: 23px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%;
+        color: var(--black);
+
+        @include mobile {
+          font-size: 12px;
+        }
+
+        @include hover {
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+}

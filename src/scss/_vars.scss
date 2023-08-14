@@ -15,10 +15,20 @@
   --black: #000000;
   --beige: #fff8f0;
   --black-opacity-50: rgba(0, 0, 0, 0.5);
+  --red-800: #ff1c1c;
 
   // z-index
   --z-header: 5;
   --z-footer: 5;
   --z-cookie: 5;
   --z-menu: 6;
+  --z-form-success: 3;
+  --z-play: 3;
+  --z-fon-video: 2;
+  --z-item-last-bottom: 2;
+
+  // h
+  --h-header-desk: 51.59px;
+  --h-header-tablet: 50.2px;
+  --h-header-mobile: 47.53px;
 }
