@@ -16,8 +16,8 @@
     </g>
   </symbol>
   <symbol id="icon-close-menu" width="19" height="18" viewBox="0 0 19 18">
-    <rect x="1.89844" y="0.0878906" width="23" height="1.5" transform="rotate(45 1.89844 0.0878906)" fill="black"/>
-    <rect x="0.837891" y="16.3516" width="23" height="1.5" transform="rotate(-45 0.837891 16.3516)" fill="black"/>
+    <rect x="1.89844" y="0.0878906" width="23" height="1.5" transform="rotate(45 1.89844 0.0878906)"/>
+    <rect x="0.837891" y="16.3516" width="23" height="1.5" transform="rotate(-45 0.837891 16.3516)"/>
   </symbol>
   <symbol id="icon-close-cookie" width="11" height="11" viewBox="0 0 11 11">
     <path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M4.41943 5.48016L0.00012207 9.89948L1.06079 10.9601L5.4801 6.54083L9.89954 10.9602L10.9602 9.89954L6.54077 5.48016L10.9603 1.06067L9.89966 0L5.4801 4.41949L1.06067 6.10352e-05L0 1.06073L4.41943 5.48016Z"/>

@@ -1,0 +1,142 @@
+.pageAbout {
+  @include small-tablet {
+    padding-top: 32px;
+  }
+
+  @include mobile {
+    padding-top: 10px;
+  }
+
+  .container-w-header {
+    @include small-tablet {
+      height: calc(100vh - 84px);
+    }
+
+    @include mobile {
+      height: calc(100vh - 70px);
+    }
+  }
+  .words {
+    .word--4 {
+      display: flex;
+      align-items: center;
+      gap: 15%;
+
+      @include tablet {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+
+      @include mobile {
+        gap: 20px;
+      }
+
+      .word__many {
+        // font-size: 23px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%;
+        max-width: 40%;
+        font-size: calc(((100vh - 220px) / 4) / 8);
+
+        @include for-desktop-big {
+          font-size: 23px;
+        }
+
+        @include tablet {
+          font-size: 28px;
+          max-width: 738px;
+        }
+
+        @include mobile {
+          font-size: 18px;
+        }
+      }
+    }
+    .word--span {
+      color: #000;
+      font-family: Helvetica;
+      // font-size ((100vh - var(h-header) - var(h-bottom)) / 4)
+      font-size: 180px;
+      font-size: calc((100vh - 220px) / 4);
+      font-style: normal;
+      font-weight: 700;
+      line-height: 106%; /* 288px */
+      text-transform: uppercase;
+
+      @include for-desktop-big {
+        font-size: 180px;
+      }
+
+      @include tablet {
+        font-size: 75px;
+      }
+
+      @include small-tablet {
+        font-size: 70px;
+      }
+
+      @include mobile {
+        font-size: 28px;
+      }
+    }
+  }
+
+  &__button {
+    width: 100%;
+    position: absolute;
+    bottom: 30px;
+
+    @include mobile {
+      bottom: 0;
+    }
+
+    .line {
+      display: block;
+      width: 100%;
+      height: 14px;
+      background: var(--black);
+
+      @include small-tablet {
+        height: 9px;
+      }
+
+      @include mobile {
+        height: 3px;
+      }
+    }
+
+    @include hover {
+      opacity: 0.5;
+    }
+
+    &--row {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+
+      @include small-tablet {
+        gap: 20px;
+      }
+    }
+
+    &--word {
+      text-align: right;
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 160%;
+      color: var(--black);
+      flex-shrink: 0;
+
+      @include small-tablet {
+        font-size: 24px;
+      }
+
+      @include mobile {
+        font-size: 12px;
+      }
+    }
+  }
+}

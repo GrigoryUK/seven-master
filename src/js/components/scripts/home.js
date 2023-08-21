@@ -22,8 +22,13 @@ const sliderHome = () => {
 }
 
 const cookieClose = () => {
+  const cookie = $('.data-cookie');
+  if (sessionStorage.getItem('cookie') !== 'cookie-id') {
+    cookie.fadeIn('slow');
+  }
   $('.btn-close-cookieHome').on('click', function() {
       $(this).closest('.cookieHome').fadeOut();
+      sessionStorage.setItem('cookie', 'cookie-id')
   })
 }
 

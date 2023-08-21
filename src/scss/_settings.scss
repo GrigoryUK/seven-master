@@ -26,6 +26,18 @@ html {
   font-weight: 400;
 }
 
+.theme-light {
+  --white: #fff;
+  --black: #000000;
+  background: var(--white);
+}
+
+.theme-dark {
+  --black: #fff;
+  --white: #000000;
+  background: var(--white);
+}
+
 img {
   height: 100%;
   width: 100%;
