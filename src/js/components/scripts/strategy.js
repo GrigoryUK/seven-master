@@ -1,10 +1,17 @@
 import GraphTabs from 'graph-tabs'
 import $ from 'jquery'
+import { linksRelocation } from '../base/relocation'
 export function StrategyScripts() {
-  tabs()
-  textareaJSHeight()
-  // tabsMutation()
-  tabsButtonClick()
+  const container = document.querySelector('.pageStrategy');
+
+  if (container) {
+    tabs()
+    textareaJSHeight()
+    // tabsMutation()
+    tabsButtonClick()
+    animStrategy();
+    linksRelocation('exit-page-opacity');
+  }
 }
 
 const tabs = () => {
@@ -15,6 +22,16 @@ const tabs = () => {
   }
 
 }
+
+const animStrategy = () => {
+  const container = $('.pageStrategy');
+  const header = $('.headerHome__container');
+
+  container.addClass('anim-strategy');
+  header.addClass('anim-header-opacity');
+}
+
+
 
 const tabsButtonClick = () => {
   $('.tabs__strategy--btn').on('click', function() {

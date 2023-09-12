@@ -1,17 +1,18 @@
 html {
   box-sizing: border-box;
+  height: 100%;
+  font-family: var(--font-family);
+  -webkit-text-size-adjust: 100%;
+
+  @include tablet {
+    font-size: 10px;
+  }
 }
 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
-}
-
-.page {
-  height: 100%;
-  font-family: var(--font-family);
-  -webkit-text-size-adjust: 100%;
 }
 
 .page__body {
@@ -63,6 +64,44 @@ img {
 
 .site-container {
   overflow: hidden; // если используете на сайте position: sticky - уберите эту настройку
+
+  &.exit-page-scale-opacity {
+    transform-origin: center center;
+    animation-name: exitPageScaleOpacity;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    // animation-timing-function: ease-in-out;
+    // animation-delay: 0.2s;
+
+    @keyframes exitPageScaleOpacity {
+      0% {
+        transform: scale(1);
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  &.exit-page-opacity {
+    transform-origin: center center;
+    animation-name: exitPageOpacity;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    // animation-delay: 0.2s;
+
+    @keyframes exitPageOpacity {
+      0% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+  }
 }
 
 .is-hidden {

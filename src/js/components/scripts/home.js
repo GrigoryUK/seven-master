@@ -1,10 +1,18 @@
 import $ from 'jquery'
 import Swiper, { Autoplay, EffectFade, Navigation, Pagination } from 'swiper'
+import { linksRelocation } from '../base/relocation'
 Swiper.use([Navigation, Pagination, Autoplay, EffectFade]);
 
 export function HomeScripts() {
-  sliderHome()
-  cookieClose()
+  const container = document.querySelector('.pageHome');
+
+  if (container) {
+    sliderHome()
+    cookieClose()
+    linksRelocation('exit-page-scale-opacity');
+    homeAnim();
+  }
+
 }
 
 const sliderHome = () => {
@@ -19,6 +27,17 @@ const sliderHome = () => {
 
       }
     });
+}
+
+const homeAnim = () => {
+
+  const container = $('.pageHome');
+  const footer = $('.footerHome__container');
+  const header = $('.headerHome__container');
+
+  container.addClass('anim-page-home');
+  header.addClass('anim-header-home');
+  footer.addClass('anim-footer-home');
 }
 
 const cookieClose = () => {

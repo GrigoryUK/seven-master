@@ -1,6 +1,47 @@
 .pageHome {
+  position: relative;
+  transition: all 0.5s ease;
+
+  .swiper-slide {
+    position: relative;
+  }
+
+  .pageHome-slider-fon {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background: var(--black);
+    opacity: 0.2;
+    z-index: var(--z-fon-home);
+  }
+
   img {
     height: 100vh;
     width: 100vw;
+    position: relative;
+  }
+
+  &.anim-page-home {
+    transform-origin: center center;
+    animation-name: fadeInHome;
+    opacity: 0;
+    transform: scale(1.1);
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.2s;
+  }
+
+  @keyframes fadeInHome {
+    0% {
+      opacity: 0;
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
   }
 }
