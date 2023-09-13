@@ -131,7 +131,7 @@
         height: 8px;
         width: 0%;
         background: var(--black);
-        transition: all 0.2s ease;
+        transition: all 0.3s ease-in-out;
 
         @include tablet {
           bottom: 0px;

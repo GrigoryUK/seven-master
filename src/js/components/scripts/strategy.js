@@ -1,15 +1,14 @@
 import GraphTabs from 'graph-tabs'
 import $ from 'jquery'
-import { linksRelocation } from '../base/relocation'
+import { animHeaderOpacity, linksRelocation } from '../base/relocation'
 export function StrategyScripts() {
   const container = document.querySelector('.pageStrategy');
 
   if (container) {
     tabs()
     textareaJSHeight()
-    // tabsMutation()
     tabsButtonClick()
-    animStrategy();
+    animHeaderOpacity();
     linksRelocation('exit-page-opacity');
   }
 }
@@ -23,13 +22,6 @@ const tabs = () => {
 
 }
 
-const animStrategy = () => {
-  const container = $('.pageStrategy');
-  const header = $('.headerHome__container');
-
-  container.addClass('anim-strategy');
-  header.addClass('anim-header-opacity');
-}
 
 
 
@@ -51,18 +43,3 @@ const textareaJSHeight = () => {
 
 }
 
-
-const tabsMutation = () => {
-  const cont = document.querySelector('.tabs__strategy');
-  let observer = new MutationObserver(() => {
-    textareaJSHeight();
-
-  });
-
-
-  observer.observe(cont, {
-    childList: true,
-    subtree: true,
-    characterDataOldValue: true
-  });
-}

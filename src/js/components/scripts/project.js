@@ -5,7 +5,6 @@ export function ProjectScripts() {
 }
 
 
-
 const smoothScroll = () => {
 
   const scroll = new SmoothScroll('a[href*="#top"]', {

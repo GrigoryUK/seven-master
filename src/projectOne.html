@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="ru" class="page">
+  @include('partials/head.html')
 
-@include('partials/head.html')
-
-<body class="page__body ">
-  <div class="site-container">
-    <div class="visually-hidden" id="top"></div>
-    @include('partials/headerProject.html')
-    @include('partials/menu.html')
-    @include('partials/pageProject.html')
-  </div>
-</body>
-
+  <body class="page__body">
+    <div class="site-container">
+      <div class="visually-hidden" id="top"></div>
+      @include('partials/headerHome.html')
+      <!--  -->
+      @include('partials/menu.html')
+      <!--  -->
+      @include('partials/pageProject.html')
+    </div>
+  </body>
 </html>

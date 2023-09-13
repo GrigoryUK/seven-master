@@ -1,6 +1,6 @@
-import { gsap } from 'gsap/all'
 import Inputmask from "inputmask"
 import $ from 'jquery'
+import { linksRelocation } from '../base/relocation'
 
 export function ContactScripts() {
   const container = document.querySelector('.pageContact');
@@ -8,6 +8,7 @@ export function ContactScripts() {
   if (container) {
     maskPhone();
     validate();
+    linksRelocation('exit-page-opacity');
   }
 }
 
@@ -54,6 +55,6 @@ function validate() {
 
 
 
-const animContactPage = () => {
-  gsap.to($('.test'), 1 , {opacity: 1})
+const animContact = () => {
+
 }

@@ -22,26 +22,4 @@
     width: 100vw;
     position: relative;
   }
-
-  &.anim-page-home {
-    transform-origin: center center;
-    animation-name: fadeInHome;
-    opacity: 0;
-    transform: scale(1.1);
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-in-out;
-    animation-delay: 0.2s;
-  }
-
-  @keyframes fadeInHome {
-    0% {
-      opacity: 0;
-      transform: scale(1.1);
-    }
-    100% {
-      transform: scale(1);
-      opacity: 1;
-    }
-  }
 }

@@ -1,4 +1,5 @@
 
+import { AboutScripts } from './scripts/about'
 import { ContactScripts } from './scripts/contact'
 import { HomeScripts } from './scripts/home'
 import { PolicyScripts } from './scripts/policy'
@@ -15,4 +16,5 @@ document.addEventListener('DOMContentLoaded', (event) => {
   PolicyScripts()
   ContactScripts()
   ProjectScripts()
+  AboutScripts()
 });

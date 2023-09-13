@@ -64,6 +64,7 @@
       font-weight: 700;
       line-height: 106%; /* 288px */
       text-transform: uppercase;
+      user-select: none;
 
       @include for-desktop-big {
         font-size: 180px;

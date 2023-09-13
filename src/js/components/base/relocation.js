@@ -14,3 +14,9 @@ export const linksRelocation = (cls) => {
     return false;
   })
 }
+
+
+export const animHeaderOpacity = () => {
+  const header = $('.headerHome__container');
+  header.addClass('anim-header-opacity');
+}
