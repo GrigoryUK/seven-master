@@ -1,8 +1,8 @@
 :root {
   // base
   --font-family: "Helvetica", "Aeroport", sans-serif;
-  --content-width: 1890px;
-  --container-offset: 15px;
+  --content-width: 189rem;
+  --container-offset: 1.5rem;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
 
   // fonts
@@ -31,7 +31,12 @@
   --z-fon-home: 2;
 
   // h
-  --h-header-desk: 51.59px;
-  --h-header-tablet: 50.2px;
-  --h-header-mobile: 47.53px;
+  // --h-header-desk: 51.59px;
+  --h-header-desk: 6.1rem;
+  // --h-header-laptop: 5.359rem;
+  --h-header-laptop: 5.559rem;
+  // --h-header-tablet: 50.2px;
+  --h-header-tablet: 5.2rem;
+  // --h-header-mobile: 47.53px;
+  --h-header-mobile: 4.753rem;
 }

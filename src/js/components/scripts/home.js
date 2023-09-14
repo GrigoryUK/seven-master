@@ -10,7 +10,7 @@ export function HomeScripts() {
     sliderHome()
     cookieClose()
     linksRelocation('exit-page-scale-opacity');
-    homeAnim();
+    // homeAnim();
   }
 
 }

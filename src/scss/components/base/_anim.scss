@@ -486,3 +486,286 @@
     }
   }
 }
+
+.title-main {
+  &.animate {
+    .anim-project-title {
+      animation-name: animProjectTitle;
+    }
+
+    .anim-project-line {
+      animation-name: animProjectLine;
+    }
+
+    .anim-project-title-one {
+      animation-name: animProjectTitleOne;
+    }
+  }
+}
+
+.anim-project-title {
+  transform-origin: center center;
+
+  opacity: 0;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  // animation-delay: 0.5s;
+
+  @keyframes animProjectTitle {
+    0% {
+      opacity: 0;
+      transform: translateX(5%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+  }
+}
+
+.anim-project-title-one {
+  transform-origin: center center;
+
+  opacity: 0;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  // animation-delay: 0.5s;
+
+  @keyframes animProjectTitleOne {
+    0% {
+      opacity: 0;
+      transform: translateX(-5%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+  }
+}
+
+.anim-project-line {
+  transform-origin: center right;
+
+  opacity: 0;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.2s;
+
+  @keyframes animProjectLine {
+    0% {
+      opacity: 0;
+      transform: scale(0, 1);
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1, 1);
+      opacity: 1;
+    }
+  }
+}
+
+.anim-hashtags {
+  transform-origin: center center;
+  opacity: 0;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  // animation-delay: 0.5s;
+
+  &.animate {
+    animation-name: animProjectHashtags;
+  }
+  @keyframes animProjectHashtags {
+    0% {
+      opacity: 0;
+      transform: translateY(10%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+}
+
+.anim-text {
+  transform-origin: center center;
+  opacity: 0;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  // animation-delay: 0.5s;
+
+  &.animate {
+    animation-name: animProjectText;
+  }
+  @keyframes animProjectText {
+    0% {
+      opacity: 0;
+      transform: translateY(10%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+}
+
+.anim-video {
+  transform-origin: center center;
+  opacity: 0;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  // animation-delay: 0.5s;
+
+  &.animate {
+    animation-name: animProjectVideo;
+  }
+  @keyframes animProjectVideo {
+    0% {
+      opacity: 0;
+      transform: translateY(10%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+}
+
+.anim-image {
+  transform-origin: center center;
+  opacity: 0;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  // animation-delay: 0.5s;
+
+  &.animate {
+    animation-name: animProjectImage;
+  }
+  @keyframes animProjectImage {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+.anim-back {
+  transform-origin: center center;
+  opacity: 0;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  // animation-delay: 0.5s;
+
+  &.animate {
+    animation-name: animProjectBack;
+  }
+  @keyframes animProjectBack {
+    0% {
+      opacity: 0;
+      transform: translateX(-5%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+  }
+}
+
+.anim-last {
+  transform-origin: center center;
+  opacity: 0;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  // animation-delay: 0.5s;
+
+  &.animate {
+    animation-name: animProjectLast;
+
+    .anim-last-words {
+      animation-name: animProjectLastWords;
+    }
+
+    .anim-line-project-one {
+      animation-name: animLineProjectOne;
+    }
+    .anim-line-project-two {
+      animation-name: animLineProjectTwo;
+    }
+  }
+  @keyframes animProjectLast {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+.anim-last-words {
+  transform-origin: center center;
+  opacity: 0;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.2s;
+
+  @keyframes animProjectLastWords {
+    0% {
+      opacity: 0;
+      transform: translate(-50%, -45%);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+.anim-line-project-one {
+  transform-origin: center right;
+
+  opacity: 0;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.2s;
+
+  @keyframes animLineProjectOne {
+    0% {
+      opacity: 0;
+      transform: scale(0, 1);
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1, 1);
+      opacity: 1;
+    }
+  }
+}
+
+.anim-line-project-two {
+  transform-origin: center left;
+
+  opacity: 0;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.2s;
+
+  @keyframes animLineProjectTwo {
+    0% {
+      opacity: 0;
+      transform: scale(0, 1);
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1, 1);
+      opacity: 1;
+    }
+  }
+}

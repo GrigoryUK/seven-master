@@ -1,19 +1,21 @@
 .pageProject {
   &__main {
+    overflow: hidden;
     @include tablet {
-      margin-bottom: 20px;
+      margin-bottom: 2rem;
     }
 
     &--image {
       height: 100vh;
       width: 100vw;
+      transition: all 0.5s;
     }
 
     &--back {
       position: absolute;
-      left: 15px;
-      top: 82px;
-      font-size: 14px;
+      left: 1.5rem;
+      top: 8.2rem;
+      font-size: 1.4rem;
       font-style: normal;
       font-weight: 400;
       line-height: 160%;
@@ -21,7 +23,7 @@
       color: var(--white);
 
       @include tablet {
-        font-size: 12px;
+        font-size: 1.2rem;
       }
 
       @include mobile {
@@ -37,7 +39,7 @@
   .title-main {
     .first-word {
       margin: 0;
-      font-size: 180px;
+      font-size: 18rem;
       font-style: normal;
       font-weight: 700;
       line-height: 160%;
@@ -46,54 +48,54 @@
       margin-bottom: -5%;
 
       @include big-desktop {
-        font-size: 130px;
+        font-size: 13rem;
       }
 
       @include tablet {
-        font-size: 90px;
+        font-size: 9rem;
       }
 
       @include mobile {
-        font-size: 35.769px;
+        font-size: 3.6rem;
       }
     }
     .title {
       display: flex;
       align-items: center;
-      gap: 28px;
+      gap: 2.8rem;
 
       @include tablet {
-        gap: 14px;
-        margin-bottom: 50px;
+        gap: 14rem;
+        margin-bottom: 5rem;
       }
 
       @include small-tablet {
-        margin-bottom: 16px;
+        margin-bottom: 1.6rem;
       }
 
       @include mobile {
-        gap: 14px;
-        margin-bottom: 30px;
+        gap: 1.4rem;
+        margin-bottom: 3rem;
       }
 
       h1 {
         margin: 0;
-        font-size: 180px;
+        font-size: 18rem;
         font-style: normal;
         font-weight: 700;
         line-height: 160%;
         text-transform: uppercase;
 
         @include big-desktop {
-          font-size: 130px;
+          font-size: 13rem;
         }
 
         @include tablet {
-          font-size: 90px;
+          font-size: 9rem;
         }
 
         @include mobile {
-          font-size: 35.769px;
+          font-size: 3.6rem;
         }
       }
 
@@ -103,33 +105,33 @@
         &::before {
           @include pseudo;
           width: 100%;
-          height: 17px;
+          height: 1.7rem;
           background: var(--black);
 
           @include tablet {
-            height: 8px;
+            height: 0.8rem;
           }
 
           @include mobile {
-            height: 3px;
+            height: 0.3rem;
           }
         }
 
         &::after {
           @include pseudo;
           width: 100%;
-          height: 17px;
+          height: 1.7rem;
           background: var(--black);
-          margin-top: 20px;
+          margin-top: 2rem;
 
           @include tablet {
-            height: 8px;
-            margin-top: 10px;
+            height: 0.8rem;
+            margin-top: 1rem;
           }
 
           @include mobile {
-            height: 3px;
-            margin-top: 4px;
+            height: 0.3rem;
+            margin-top: 0.4rem;
           }
         }
       }
@@ -138,16 +140,16 @@
   .hashtags {
     display: flex;
     align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: 4rem;
 
     @include mobile {
       flex-wrap: wrap;
-      gap: 5px;
-      margin-bottom: 20px;
+      gap: 0.5rem;
+      margin-bottom: 2rem;
     }
 
     .hashtag {
-      font-size: 18px;
+      font-size: 1.8rem;
       font-style: normal;
       font-weight: 400;
       line-height: 160%;
@@ -158,67 +160,67 @@
       &:not(:last-child) {
         &::after {
           @include pseudo;
-          height: 18px;
-          width: 2px;
+          height: 1.8rem;
+          width: 0.2rem;
           background: var(--black);
           opacity: 0.7;
           line-height: 160%;
-          margin: 0 20px;
+          margin: 0 2rem;
 
           @include mobile {
-            height: 14px;
-            width: 2px;
-            margin: 0 18px;
+            height: 1.4rem;
+            width: 0.2rem;
+            margin: 0 1.8rem;
           }
         }
       }
 
       @include mobile {
-        font-size: 14px;
+        font-size: 1.4rem;
       }
     }
   }
 
   .text {
-    margin-bottom: 100px;
+    margin-bottom: 10rem;
 
     @include small-tablet {
-      margin-bottom: 24px;
+      margin-bottom: 2.4rem;
     }
 
     @include mobile {
-      margin-bottom: 40px;
+      margin-bottom: 4rem;
     }
     p {
       margin: 0;
-      max-width: 1290px;
-      font-size: 32px;
+      max-width: 129rem;
+      font-size: 3.2rem;
       font-style: normal;
       font-weight: 400;
       line-height: 160%;
 
       @include small-tablet {
-        font-size: 28px;
+        font-size: 2.8rem;
       }
 
       @include mobile {
-        font-size: 16px;
+        font-size: 1.6rem;
       }
     }
     p + p {
-      margin-top: 1em;
+      margin-top: 1.6rem;
     }
   }
 
   .items {
     display: flex;
-    gap: 15px;
+    gap: 1.5rem;
     flex-direction: column;
     align-items: flex-start;
-    margin-bottom: 15px;
+    margin-bottom: 1.5rem;
 
     @include small-tablet {
-      margin-bottom: 12px;
+      margin-bottom: 1.2rem;
     }
   }
 
@@ -250,59 +252,66 @@
         z-index: var(--z-fon-video);
       }
       .play {
-        width: 150px;
-        height: 150px;
+        width: 15rem;
+        height: 15rem;
         position: absolute;
         display: flex;
         align-items: center;
         justify-content: center;
-        border-radius: 100px;
-        border: 2px solid var(--white);
+        border-radius: 100%;
+        border: 0.2rem solid var(--white);
         z-index: var(--z-play);
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
+        transition: all 0.3s ease;
 
         @include mobile {
-          width: 80px;
-          height: 80px;
+          width: 8rem;
+          height: 8rem;
         }
 
         svg {
           fill: var(--white);
-          width: 13.394px;
-          height: 16.533px;
-          transform: translate(1px, -1px);
+          width: 1.3394rem;
+          height: 1.6533rem;
+          transform: translate(0.1rem, -0.1rem);
 
           @include mobile {
-            transform: translate(2px, 0px);
+            transform: translate(0.2rem, 0);
           }
+        }
+
+        &.active {
+          transform: translate(-50%, -50%) scale(0.1);
+          opacity: 0;
         }
       }
     }
 
     &__image {
       height: auto;
+      width: 100%;
     }
   }
 
   .back {
     display: block;
-    font-size: 14px;
+    font-size: 1.4rem;
     font-style: normal;
     font-weight: 400;
     line-height: 160%;
     text-transform: uppercase;
     color: var(--black);
-    margin-bottom: 150px;
+    margin-bottom: 15rem;
 
     @include tablet {
-      font-size: 12px;
-      margin-bottom: 100px;
+      font-size: 1.2rem;
+      margin-bottom: 10rem;
     }
 
     @include mobile {
-      margin-bottom: 70px;
+      margin-bottom: 7rem;
     }
 
     @include hover {
@@ -326,6 +335,7 @@
     &--img {
       height: 100vh;
       width: 100vw;
+      transition: all 0.5s;
     }
 
     &--words {
@@ -334,15 +344,15 @@
       left: 50%;
       transform: translate(-50%, -50%);
       width: 100%;
-      padding: 0 15px;
+      padding: 0 1.5rem;
 
       @include hover {
-        opacity: 0.6;
+        opacity: 0.6 !important;
       }
 
       &--prefix {
         text-align: center;
-        font-size: 32px;
+        font-size: 3.2rem;
         font-style: normal;
         font-weight: 400;
         line-height: 160%;
@@ -351,12 +361,12 @@
         margin-bottom: -2%;
 
         @include small-tablet {
-          font-size: 28px;
+          font-size: 2.8rem;
         }
 
         @include mobile {
-          font-size: 14px;
-          margin-bottom: 10px;
+          font-size: 1.4rem;
+          margin-bottom: 1rem;
         }
       }
     }
@@ -365,7 +375,7 @@
       text-align: center;
       .first-word {
         margin: 0;
-        font-size: 180px;
+        font-size: 18rem;
         font-style: normal;
         font-weight: 700;
         line-height: 160%;
@@ -376,33 +386,33 @@
         color: var(--white);
 
         @include big-desktop {
-          font-size: 130px;
+          font-size: 13rem;
         }
 
         @include tablet {
-          font-size: 90px;
+          font-size: 9rem;
         }
 
         @include mobile {
-          font-size: 35.769px;
+          font-size: 3.6rem;
         }
       }
 
       &--anim {
         display: flex;
         align-items: center;
-        gap: 28px;
+        gap: 2.8rem;
 
         @include tablet {
-          gap: 14px;
+          gap: 1.4rem;
         }
 
         @include mobile {
-          gap: 14px;
+          gap: 1.4rem;
         }
         .two-word {
           margin: 0;
-          font-size: 180px;
+          font-size: 18rem;
           font-style: normal;
           font-weight: 700;
           line-height: 160%;
@@ -410,15 +420,15 @@
           color: var(--white);
 
           @include big-desktop {
-            font-size: 130px;
+            font-size: 13rem;
           }
 
           @include tablet {
-            font-size: 90px;
+            font-size: 9rem;
           }
 
           @include mobile {
-            font-size: 35.769px;
+            font-size: 3.6rem;
           }
         }
 
@@ -428,33 +438,33 @@
           &::before {
             @include pseudo;
             width: 100%;
-            height: 17px;
+            height: 1.7rem;
             background: var(--white);
 
             @include tablet {
-              height: 8px;
+              height: 0.8rem;
             }
 
             @include mobile {
-              height: 3px;
+              height: 0.3rem;
             }
           }
 
           &::after {
             @include pseudo;
             width: 100%;
-            height: 17px;
+            height: 1.7rem;
             background: var(--white);
-            margin-top: 20px;
+            margin-top: 2rem;
 
             @include tablet {
-              height: 8px;
-              margin-top: 10px;
+              height: 0.8rem;
+              margin-top: 1rem;
             }
 
             @include mobile {
-              height: 3px;
-              margin-top: 4px;
+              height: 0.3rem;
+              margin-top: 0.4rem;
             }
           }
         }
@@ -465,8 +475,8 @@
       position: absolute;
       width: 100%;
       left: 0;
-      padding: 0 15px;
-      bottom: 15px;
+      padding: 0 1.5rem;
+      bottom: 1.5rem;
       z-index: var(--z-item-last-bottom);
       display: flex;
       align-items: center;
@@ -474,7 +484,7 @@
     }
 
     &--strategy {
-      font-size: 18px;
+      font-size: 1.8rem;
       font-style: normal;
       font-weight: 400;
       line-height: 160%;
@@ -483,7 +493,7 @@
       color: var(--white);
 
       @include mobile {
-        font-size: 14px;
+        font-size: 1.4rem;
       }
 
       &::before {
@@ -493,7 +503,7 @@
         bottom: 0;
         width: 100%;
         background: var(--white);
-        height: 1px;
+        height: 0.1rem;
         transition: all 0.2s ease;
       }
 
@@ -507,27 +517,27 @@
     }
 
     &--arrow {
-      width: 60px;
-      height: 60px;
+      width: 6rem;
+      height: 6rem;
       background: transparent;
-      border-radius: 100px;
-      border: 1px solid var(--white);
+      border-radius: 100%;
+      border: 0.1rem solid var(--white);
       display: flex;
       align-items: center;
       justify-content: center;
       transition: all 0.2s ease;
 
       @include mobile {
-        width: 50px;
-        height: 50px;
+        width: 5rem;
+        height: 5rem;
       }
       svg {
         transition: all 0.2s ease;
-        width: 14px;
+        width: 1.4rem;
         fill: var(--white);
 
         @include mobile {
-          width: 8px;
+          width: 0.8rem;
         }
       }
 

@@ -1,41 +1,41 @@
 .pagePolicy {
   .content {
     margin: 0 auto;
-    max-width: 1200px;
-    padding-top: 170px;
-    padding-bottom: 170px;
+    max-width: 120rem;
+    padding-top: 17rem;
+    padding-bottom: 17rem;
 
     @include tablet {
-      padding: 100px 0;
+      padding: 10rem 0;
     }
 
     @include mobile {
-      padding: 40px 0;
+      padding: 4rem 0;
     }
 
     h1 {
-      font-size: 54px;
+      font-size: 5.4rem;
       font-style: normal;
       font-weight: 700;
       line-height: 160%;
       text-transform: uppercase;
       margin: 0;
-      margin-bottom: 40px;
+      margin-bottom: 4rem;
 
       @include tablet {
-        font-size: 46px;
+        font-size: 4.6rem;
       }
 
       @include mobile {
-        font-size: 28px;
-        margin-bottom: 30px;
+        font-size: 2.8rem;
+        margin-bottom: 3rem;
       }
     }
 
     a {
       color: var(--black);
       text-decoration: underline;
-      text-underline-offset: 3px;
+      text-underline-offset: 0.3rem;
 
       @include hover {
         opacity: 0.6;
@@ -43,24 +43,24 @@
     }
 
     h4 {
-      font-size: 32px;
+      font-size: 3.2rem;
       margin: 0;
-      margin-bottom: 40px;
+      margin-bottom: 4rem;
       font-weight: 400;
       @include mobile {
-        font-size: 24px;
-        margin-bottom: 30px;
+        font-size: 2.4rem;
+        margin-bottom: 3rem;
       }
     }
 
     p {
       margin: 0;
-      font-size: 18px;
-      margin-bottom: 40px;
+      font-size: 1.8rem;
+      margin-bottom: 4rem;
 
       @include mobile {
-        font-size: 16px;
-        margin-bottom: 30px;
+        font-size: 1.6rem;
+        margin-bottom: 3rem;
       }
     }
 
@@ -68,19 +68,19 @@
     ol {
       margin: 0;
       padding: 0;
-      padding-left: 2%;
-      margin-bottom: 40px;
+      padding-left: 2rem;
+      margin-bottom: 4rem;
 
       @include mobile {
-        margin-bottom: 30px;
+        margin-bottom: 3rem;
       }
 
       li {
         line-height: 1.6;
-        font-size: 18px;
+        font-size: 1.8rem;
 
         @include mobile {
-          font-size: 16px;
+          font-size: 1.6rem;
         }
       }
     }

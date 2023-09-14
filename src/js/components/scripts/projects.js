@@ -1,6 +1,7 @@
 import GraphTabs from 'graph-tabs'
 import $ from 'jquery'
 import { linksRelocation } from '../base/relocation'
+import { animationScroll } from '../base/utils'
 
 export function ProjectsScripts() {
   const container = document.querySelector('.pageProjects');
@@ -10,6 +11,7 @@ export function ProjectsScripts() {
     themeToggle();
     animScrollProjects();
     linksRelocation('exit-page-opacity');
+
   }
 
 }
@@ -38,52 +40,6 @@ const themeToggle = () => {
 }
 
 const animScrollProjects = () => {
-  animationItems();
-  animationLinks();
-
-
-  function animationItems() {
-    function onEntry(entry) {
-      entry.forEach((change) => {
-        if (change.isIntersecting) {
-
-          change.target.classList.add("animate");
-        } else {
-        }
-      });
-    }
-
-    let options = {
-      threshold: [0.15],
-    };
-    let observer = new IntersectionObserver(onEntry, options);
-    let elements = document.querySelectorAll(".anim-item-project");
-
-    for (let elm of elements) {
-      observer.observe(elm);
-    }
-  }
-
-  function animationLinks() {
-    function onEntry(entry) {
-      entry.forEach((change) => {
-        if (change.isIntersecting) {
-
-          change.target.classList.add("animate");
-        } else {
-        }
-      });
-    }
-
-    let options = {
-      threshold: [0.15],
-    };
-    let observer = new IntersectionObserver(onEntry, options);
-    let elements = document.querySelectorAll(".anim-projects-link");
-
-    for (let elm of elements) {
-      observer.observe(elm);
-    }
-  }
-
+  animationScroll('.anim-item-project');
+  animationScroll('.anim-projects-link');
 }

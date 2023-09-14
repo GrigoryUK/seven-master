@@ -2,21 +2,21 @@
   .title {
     display: flex;
     align-items: center;
-    gap: 28px;
+    gap: 2.8rem;
 
     @include tablet {
-      gap: 14px;
-      margin-bottom: 20px;
+      gap: 1.4rem;
+      margin-bottom: 2rem;
     }
 
     @include mobile {
-      gap: 14px;
-      margin-bottom: 10px;
+      gap: 1.4rem;
+      margin-bottom: 1rem;
     }
 
     h1 {
       margin: 0;
-      font-size: 180px;
+      font-size: 18rem;
       font-style: normal;
       font-weight: 700;
       line-height: 160%;
@@ -24,11 +24,11 @@
       color: var(--black);
 
       @include tablet {
-        font-size: 90px;
+        font-size: 9rem;
       }
 
       @include mobile {
-        font-size: 35.769px;
+        font-size: 3.6rem;
       }
     }
 
@@ -38,43 +38,43 @@
       &::before {
         @include pseudo;
         width: 100%;
-        height: 17px;
+        height: 1.7rem;
         background: var(--black);
 
         @include tablet {
-          height: 8px;
+          height: 0.8rem;
         }
 
         @include mobile {
-          height: 3px;
+          height: 0.3rem;
         }
       }
 
       &::after {
         @include pseudo;
         width: 100%;
-        height: 17px;
+        height: 1.7rem;
         background: var(--black);
-        margin-top: 20px;
+        margin-top: 2rem;
 
         @include tablet {
-          height: 8px;
-          margin-top: 10px;
+          height: 0.8rem;
+          margin-top: 1rem;
         }
 
         @include mobile {
-          height: 3px;
-          margin-top: 4px;
+          height: 0.3rem;
+          margin-top: 0.4rem;
         }
       }
     }
   }
 
   .tabs__projects {
-    margin-bottom: 150px;
+    margin-bottom: 15rem;
 
     @include tablet {
-      margin-bottom: 70px;
+      margin-bottom: 7rem;
     }
 
     &--nav {
@@ -82,21 +82,21 @@
       margin: 0;
       display: flex;
       align-items: center;
-      gap: 30px;
+      gap: 3rem;
       justify-content: space-between;
-      margin-bottom: 60px;
+      margin-bottom: 6rem;
 
       @include tablet {
         flex-direction: column;
-        gap: 6px;
+        gap: 0.6rem;
         justify-content: flex-start;
         align-items: flex-start;
-        margin-bottom: 50px;
+        margin-bottom: 5rem;
       }
 
       @include mobile {
-        gap: 2px;
-        margin-bottom: 20px;
+        gap: 0.2rem;
+        margin-bottom: 2rem;
       }
     }
 
@@ -107,7 +107,7 @@
 
     &--btn {
       position: relative;
-      font-size: 46px;
+      font-size: 4.6rem;
       font-weight: 700;
       line-height: 160%;
       text-transform: uppercase;
@@ -119,27 +119,27 @@
       }
 
       @include mobile {
-        font-size: 18px;
+        font-size: 1.8rem;
         line-height: 150%;
       }
 
       &::before {
         @include pseudo;
         position: absolute;
-        bottom: -10px;
+        bottom: -1rem;
         left: 0;
-        height: 8px;
+        height: 0.8rem;
         width: 0%;
         background: var(--black);
         transition: all 0.3s ease-in-out;
 
         @include tablet {
-          bottom: 0px;
-          height: 6px;
+          bottom: 0;
+          height: 0.6rem;
         }
 
         @include mobile {
-          height: 2px;
+          height: 0.2rem;
         }
       }
 
@@ -155,8 +155,8 @@
   &__items {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    row-gap: 15px;
-    column-gap: 16px;
+    row-gap: 1.5rem;
+    column-gap: 1.6rem;
 
     @include tablet {
       grid-template-columns: repeat(1, 1fr);
@@ -170,9 +170,9 @@
 
     &--text {
       position: absolute;
-      left: 20px;
-      bottom: 20px;
-      font-size: 26px;
+      left: 2rem;
+      bottom: 2rem;
+      font-size: 2.6rem;
       font-style: normal;
       font-weight: 400;
       line-height: 160%;
@@ -180,14 +180,14 @@
       transition: all 0.2s ease;
 
       @include tablet {
-        font-size: 18px;
-        bottom: 16px;
-        left: 15px;
+        font-size: 1.8rem;
+        bottom: 1.6rem;
+        left: 1.5rem;
       }
 
       @include mobile {
-        bottom: 10px;
-        font-size: 14px;
+        bottom: 1rem;
+        font-size: 1.4rem;
       }
     }
 
@@ -209,7 +209,7 @@
       transition: all 0.2s ease;
     }
     .txt {
-      font-size: 198px;
+      font-size: 19.8rem;
       font-style: normal;
       font-weight: 700;
       line-height: 105%;
@@ -218,11 +218,11 @@
       text-align: left;
 
       @include tablet {
-        font-size: 90px;
+        font-size: 9rem;
       }
 
       @include mobile {
-        font-size: 35.769px;
+        font-size: 3.6rem;
       }
     }
 
@@ -237,16 +237,16 @@
     .two {
       display: flex;
       align-items: center;
-      gap: 28px;
+      gap: 2.8rem;
 
       @include tablet {
-        gap: 14px;
-        margin-bottom: 20px;
+        gap: 1.4rem;
+        margin-bottom: 2rem;
       }
 
       @include mobile {
-        gap: 14px;
-        margin-bottom: 10px;
+        gap: 1.4rem;
+        margin-bottom: 1rem;
       }
     }
 
@@ -256,33 +256,33 @@
       &::before {
         @include pseudo;
         width: 100%;
-        height: 17px;
+        height: 1.7rem;
         background: var(--black);
 
         @include tablet {
-          height: 8px;
+          height: 0.8rem;
         }
 
         @include mobile {
-          height: 3px;
+          height: 0.3rem;
         }
       }
 
       &::after {
         @include pseudo;
         width: 100%;
-        height: 17px;
+        height: 1.7rem;
         background: var(--black);
-        margin-top: 20px;
+        margin-top: 2rem;
 
         @include tablet {
-          height: 8px;
-          margin-top: 10px;
+          height: 0.8rem;
+          margin-top: 1rem;
         }
 
         @include mobile {
-          height: 3px;
-          margin-top: 4px;
+          height: 0.3rem;
+          margin-top: 0.4rem;
         }
       }
     }

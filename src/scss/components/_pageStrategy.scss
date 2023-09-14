@@ -1,21 +1,21 @@
 .pageStrategy {
   @include tablet {
-    margin-top: 12px;
+    margin-top: 1.2rem;
   }
   .tabs__strategy {
     display: flex;
     align-items: flex-start;
-    gap: 28px;
+    gap: 2.8rem;
     // justify-content: space-between;
     justify-content: flex-end;
 
-    @include breakpoint(1852px) {
+    @include breakpoint(1024px) {
       flex-direction: column;
-      gap: 50px;
+      gap: 5rem;
     }
 
     @include mobile {
-      gap: 30px;
+      gap: 3rem;
     }
 
     &--nav {
@@ -29,7 +29,7 @@
       width: 100%;
       // z-index: var(--z-buttons-strategy);
 
-      @include breakpoint(1852px) {
+      @include breakpoint(1024px) {
         max-width: 100%;
         width: 100%;
         position: relative;
@@ -39,6 +39,10 @@
     &--item {
       position: relative;
       width: 100%;
+
+      &:not(:first-child) {
+        margin-top: -3%;
+      }
     }
 
     &--btn {
@@ -53,7 +57,7 @@
         opacity: 1;
 
         .two-line {
-          animation: animateThis 0.5s ease-in-out;
+          animation: animateThis 0.6s ease-in-out;
           animation-fill-mode: forwards;
         }
       }
@@ -61,84 +65,89 @@
 
     &--content {
       width: 100%;
-      max-width: 1094px;
+      max-width: 109.4rem;
 
-      padding-top: 40px;
+      padding-top: 4rem;
 
-      @include breakpoint(1852px) {
+      @include breakpoint(1024px) {
         padding-top: 0;
       }
 
-      margin-bottom: 150px;
+      margin-bottom: 15rem;
 
-      @include breakpoint(1852px) {
+      @include breakpoint(1024px) {
         max-width: 100%;
       }
 
       @include tablet {
-        margin-bottom: 100px;
+        margin-bottom: 10rem;
       }
 
       @include mobile {
-        margin-bottom: 70px;
+        margin-bottom: 7rem;
       }
 
       .two-line.desk {
         width: 100%;
         height: 100%;
-        height: 130px;
+        height: 13rem;
         display: flex;
-        margin-bottom: 60px;
+        margin-bottom: 6rem;
         align-items: center;
         flex-direction: column;
         justify-content: center;
-        animation: animateThis 0.5s ease-in-out;
+        animation: animateThis 0.5s;
         animation-fill-mode: forwards;
         display: none;
+        transform-origin: center left;
+        opacity: 0;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-delay: 0.2s;
 
         @keyframes animateThis {
           0% {
-            width: 0%;
+            opacity: 0;
           }
           100% {
             width: 100%;
           }
         }
 
-        @include breakpoint(1852px) {
+        @include breakpoint(1024px) {
           display: none;
         }
 
         &::before {
           @include pseudo;
           width: 100%;
-          height: 10px;
+          height: 1rem;
           background: var(--black);
 
           @include tablet {
-            height: 8px;
+            height: 0.8rem;
           }
 
           @include mobile {
-            height: 3px;
+            height: 0.3rem;
           }
         }
 
         &::after {
           @include pseudo;
           width: 100%;
-          height: 10px;
+          height: 1rem;
           background: var(--black);
-          margin-top: 15px;
+          margin-top: 1.5rem;
 
           @include tablet {
-            height: 8px;
-            margin-top: 10px;
+            height: 0.8rem;
+            margin-top: 1rem;
           }
 
           @include mobile {
-            height: 3px;
-            margin-top: 4px;
+            height: 0.3rem;
+            margin-top: 0.4rem;
           }
         }
       }
@@ -174,76 +183,72 @@
   .title {
     display: flex;
     align-items: center;
-    gap: 28px;
-    @include breakpoint(1852px) {
-      gap: 28px;
+    gap: 2.8rem;
+    @include breakpoint(1024px) {
+      gap: 2.8rem;
       position: relative;
     }
 
     @include tablet {
-      gap: 14px;
+      gap: 1.4rem;
     }
 
     @include mobile {
-      gap: 14px;
+      gap: 1.4rem;
     }
 
     &__word {
       margin: 0;
-      font-size: 126.239px;
+      font-size: 12.6rem;
       font-style: normal;
       font-weight: 700;
-      line-height: 110%;
+      line-height: 130%;
       text-transform: uppercase;
+      color: var(--black);
 
       @include tablet {
-        font-size: 90px;
+        font-size: 9rem;
       }
 
       @include mobile {
-        font-size: 35.769px;
+        font-size: 3.6rem;
       }
     }
 
     .two-line {
       width: 0%;
       height: 100%;
-      // display: none;
-
-      @include breakpoint(1852px) {
-        // display: block;
-      }
 
       &::before {
         @include pseudo;
         width: 100%;
-        height: 10px;
+        height: 1rem;
         background: var(--black);
 
         @include tablet {
-          height: 8px;
+          height: 0.8rem;
         }
 
         @include mobile {
-          height: 3px;
+          height: 0.3rem;
         }
       }
 
       &::after {
         @include pseudo;
         width: 100%;
-        height: 10px;
+        height: 1rem;
         background: var(--black);
-        margin-top: 15px;
+        margin-top: 1.5rem;
 
         @include tablet {
-          height: 8px;
-          margin-top: 10px;
+          height: 0.8rem;
+          margin-top: 1rem;
         }
 
         @include mobile {
-          height: 3px;
-          margin-top: 4px;
+          height: 0.3rem;
+          margin-top: 0.4rem;
         }
       }
     }
@@ -251,32 +256,32 @@
 
   &__panel {
     &--one {
-      padding-top: 140px;
+      padding-top: 14rem;
 
-      @include breakpoint(1852px) {
+      @include breakpoint(1024px) {
         padding-top: 0;
       }
     }
     &--two {
-      padding-top: 280px;
+      padding-top: 28rem;
 
-      @include breakpoint(1852px) {
+      @include breakpoint(1024px) {
         padding-top: 0;
       }
     }
 
     &--three {
-      padding-top: 420px;
+      padding-top: 42rem;
 
-      @include breakpoint(1852px) {
+      @include breakpoint(1024px) {
         padding-top: 0;
       }
     }
 
     &--four {
-      padding-top: 560px;
+      padding-top: 56rem;
 
-      @include breakpoint(1852px) {
+      @include breakpoint(1024px) {
         padding-top: 0;
       }
     }
@@ -300,41 +305,37 @@
     &--containers {
       display: flex;
       flex-direction: column;
-      gap: 70px;
+      gap: 7rem;
 
-      @include breakpoint(1852px) {
-        gap: 50px;
+      @include breakpoint(1024px) {
+        gap: 5rem;
       }
     }
     &--container {
       display: flex;
       align-items: flex-start;
       justify-content: space-between;
-      gap: 30px;
+      gap: 3rem;
 
-      @include breakpoint(1852px) {
-        gap: 40px;
+      @include breakpoint(1024px) {
+        gap: 4rem;
         flex-direction: column;
         align-items: center;
       }
 
       @include mobile {
-        gap: 20px;
+        gap: 2rem;
       }
     }
 
     &--name {
-      font-size: 20px;
+      font-size: 2rem;
       font-style: normal;
       font-weight: 400;
       line-height: 160%;
 
-      @include breakpoint(1852px) {
-        // min-width: 300px;
-      }
-
       @include mobile {
-        font-size: 14px;
+        font-size: 1.4rem;
       }
     }
 
@@ -342,15 +343,15 @@
       display: flex;
       flex-direction: column;
       width: 100%;
-      gap: 25px;
-      max-width: 779px;
+      gap: 2.5rem;
+      max-width: 78rem;
 
-      @include breakpoint(1852px) {
+      @include breakpoint(1024px) {
         max-width: 100%;
       }
 
       @include mobile {
-        gap: 20px;
+        gap: 2rem;
       }
     }
 
@@ -359,10 +360,11 @@
         outline: none;
         border: none;
         width: 100%;
-        border-bottom: 1px solid var(--gray-200);
-        // padding: 25px 0;
-        padding-bottom: 25px;
-        font-size: 24px;
+        border-bottom: 0.1rem solid var(--gray-200);
+
+        padding-bottom: 2.5rem;
+        border-radius: 0;
+        font-size: 2.4rem;
         font-style: normal;
         font-weight: 400;
         line-height: 160%;
@@ -378,9 +380,9 @@
         }
 
         @include mobile {
-          font-size: 16px;
-          // padding: 20px 0;
-          padding-bottom: 20px;
+          font-size: 1.6rem;
+
+          padding-bottom: 2rem;
         }
 
         @include hover {
@@ -393,16 +395,26 @@
         outline: none;
         border: none;
         width: 100%;
-        border-bottom: 1px solid var(--gray-200);
-        padding-bottom: 25px;
-        font-size: 24px;
+        border-bottom: 0.1rem solid var(--gray-200);
+        border-radius: 0;
+        padding-bottom: 2.5rem;
+        font-size: 2.4rem;
         font-style: normal;
         font-weight: 400;
         line-height: 160%;
 
+        &.error {
+          color: var(--red-800);
+
+          &::placeholder {
+            color: var(--red-800);
+          }
+          border-color: var(--red-800);
+        }
+
         @include mobile {
-          font-size: 16px;
-          padding-bottom: 20px;
+          font-size: 1.6rem;
+          padding-bottom: 2rem;
         }
 
         &::placeholder {
@@ -421,53 +433,58 @@
       position: absolute;
       color: var(--red-800);
       text-align: right;
-      font-size: 14px;
+      font-size: 1.4rem;
       font-style: normal;
       font-weight: 400;
       line-height: 130%;
       right: 0;
       top: 50%;
       transform: translateY(-50%);
-      max-width: 230px;
+      max-width: 23rem;
+
+      @include mobile {
+        font-size: 1rem;
+        max-width: 40%;
+      }
     }
 
     &--end {
       width: 100%;
       display: flex;
       justify-content: flex-end;
-      margin-top: 50px;
+      margin-top: 5rem;
 
-      @include breakpoint(1852px) {
+      @include breakpoint(1024px) {
         justify-content: flex-start;
       }
 
       @include mobile {
-        margin-top: 30px;
+        margin-top: 3rem;
       }
     }
 
     &--buttons {
       width: 100%;
-      max-width: 779px;
+      max-width: 78rem;
       display: flex;
       align-items: center;
       justify-content: space-between;
       position: relative;
 
-      @include breakpoint(1852px) {
+      @include breakpoint(1024px) {
         max-width: 100%;
       }
 
       @include mobile {
         flex-direction: column;
         align-items: flex-start;
-        gap: 10px;
+        gap: 1rem;
       }
     }
 
     &--policy {
       text-align: right;
-      font-size: 12px;
+      font-size: 1.2rem;
       font-style: normal;
       font-weight: 400;
       line-height: 140%;
@@ -491,13 +508,14 @@
     }
 
     &--button {
-      font-size: 23px;
+      font-size: 2.3rem;
       font-style: normal;
       font-weight: 700;
       line-height: 160%;
+      text-transform: uppercase;
 
       @include mobile {
-        font-size: 18px;
+        font-size: 1.8rem;
       }
 
       @include hover {
@@ -508,14 +526,67 @@
     &--error {
       position: absolute;
       color: var(--red-800);
-      font-size: 18px;
+      font-size: 1.8rem;
       font-weight: 400;
       line-height: 160%;
-      bottom: -50px;
+      bottom: -5rem;
 
       @include mobile {
-        font-size: 12px;
-        bottom: -34px;
+        font-size: 1.2rem;
+        bottom: -3.4rem;
+      }
+    }
+  }
+
+  &__success {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--white);
+    padding-top: 3.2rem;
+    // opacity: 0.2;
+
+    @include tablet {
+      padding-top: 1.7rem;
+    }
+
+    @include mobile {
+      padding-top: 0.7rem;
+    }
+
+    &--line {
+      width: 100%;
+      height: 1.7rem;
+      margin-bottom: 4rem;
+      background: var(--black);
+
+      @include tablet {
+        height: 1.2rem;
+        margin-bottom: 3rem;
+      }
+
+      @include mobile {
+        height: 0.8rem;
+        margin-bottom: 2rem;
+      }
+    }
+
+    &--title {
+      max-width: 82rem;
+      font-weight: 700;
+      font-size: 5.6rem;
+      margin-bottom: 5rem;
+      line-height: 140%;
+
+      @include tablet {
+        margin-bottom: 4rem;
+      }
+
+      @include mobile {
+        font-size: 36rem;
+        margin-bottom: 3rem;
       }
     }
   }

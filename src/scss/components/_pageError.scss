@@ -1,20 +1,20 @@
 .pageError {
   .content {
-    padding-top: 60px;
+    padding-top: 6rem;
 
     @include tablet {
       height: auto;
     }
 
     @include mobile {
-      padding-top: 40px;
+      padding-top: 4rem;
     }
 
     .word-bottom {
       position: fixed;
-      bottom: 15px;
-      left: 15px;
-      font-size: 23px;
+      bottom: 1.5rem;
+      left: 1.5rem;
+      font-size: 2.3rem;
       font-style: normal;
       font-weight: 700;
       line-height: 160%;
@@ -23,13 +23,13 @@
       @include mobile {
         position: absolute;
         left: 0;
-        font-size: 12px;
+        font-size: 1.2rem;
       }
     }
 
     .row {
       display: flex;
-      gap: 70px;
+      gap: 7rem;
       justify-content: space-between;
 
       @include tablet {
@@ -37,18 +37,18 @@
       }
 
       @include mobile {
-        gap: 40px;
+        gap: 4rem;
       }
 
       .image {
         svg {
-          width: 772px;
-          height: 351px;
+          width: 77.2rem;
+          height: 35.1rem;
 
           @include tablet {
             width: 100%;
             height: auto;
-            max-width: 500px;
+            max-width: 50rem;
           }
 
           @include small-tablet {
@@ -59,91 +59,91 @@
       }
 
       .block-text {
-        max-width: 902px;
-        margin-right: 35px;
+        max-width: 90.2rem;
+        margin-right: 3.5rem;
       }
 
       .title {
-        margin-bottom: 40px;
+        margin-bottom: 4rem;
 
         @include small-tablet {
-          margin-bottom: 30px;
+          margin-bottom: 3rem;
         }
 
         @include mobile {
-          margin-bottom: 20px;
+          margin-bottom: 2rem;
         }
         span {
-          font-size: 32px;
+          font-size: 3.2rem;
           font-style: normal;
           font-weight: 700;
-          line-height: 160%; /* 51.2px */
-          letter-spacing: 16px;
+          line-height: 160%;
+          letter-spacing: 1.6rem;
 
           @include mobile {
-            font-size: 24px;
-            letter-spacing: 12px;
+            font-size: 2.4rem;
+            letter-spacing: 1.2rem;
           }
 
           &:first-child {
             position: absolute;
             opacity: 0.2;
-            transform: translate(12px, -18px);
+            transform: translate(1.2rem, -1.8rem);
             user-select: none;
           }
         }
       }
 
       .txt {
-        font-size: 18px;
+        font-size: 1.8rem;
         font-style: normal;
         font-weight: 400;
         line-height: 160%;
 
         @include mobile {
-          font-size: 15px;
+          font-size: 1.5rem;
         }
       }
 
       .txt-big {
-        letter-spacing: 3.6px;
+        letter-spacing: 0.36rem;
       }
 
       .text-big {
-        margin-bottom: 38px;
+        margin-bottom: 3.8rem;
         position: relative;
         z-index: 1;
 
         @include tablet {
-          margin-bottom: 20px;
+          margin-bottom: 2rem;
         }
 
         @include mobile {
-          margin-bottom: 30px;
+          margin-bottom: 3rem;
         }
       }
 
       .text-small {
         display: flex;
         align-items: center;
-        gap: 60px;
-        margin-bottom: 90px;
+        gap: 6rem;
+        margin-bottom: 9rem;
 
         @include big-desktop {
-          margin-bottom: 120px;
+          margin-bottom: 12rem;
         }
 
         @include tablet {
-          margin-bottom: 20px;
+          margin-bottom: 2rem;
         }
 
         @include small-tablet {
-          margin-bottom: 80px;
+          margin-bottom: 8rem;
         }
 
         @include mobile {
-          gap: 16px;
-          margin-bottom: 40px;
+          gap: 1.6rem;
+          margin-bottom: 4rem;
         }
       }
 
@@ -151,19 +151,19 @@
         position: absolute;
         opacity: 0.2;
         width: 100%;
-        transform: translate(214px, 60px);
+        transform: translate(21.4rem, 6rem);
         user-select: none;
 
         @include big-desktop {
-          transform: translate(214px, 77px);
+          transform: translate(21.4rem, 7.7rem);
         }
 
         @include tablet {
-          transform: translate(214px, 60px);
+          transform: translate(21.4rem, 6rem);
         }
 
         @include mobile {
-          transform: translate(152px, 112px);
+          transform: translate(15.2rem, 11.2rem);
         }
 
         p {
@@ -171,29 +171,29 @@
         }
 
         p + p {
-          margin-top: 38px;
+          margin-top: 3.8rem;
 
           @include tablet {
-            margin-top: 20px;
+            margin-top: 2rem;
           }
 
           @include mobile {
-            margin-top: 40px;
+            margin-top: 4rem;
           }
         }
       }
 
       .link-big {
         display: block;
-        font-size: 23px;
+        font-size: 2.3rem;
         font-style: normal;
         font-weight: 700;
         line-height: 160%;
         color: var(--black);
 
         @include mobile {
-          font-size: 18px;
-          padding-bottom: 144px;
+          font-size: 1.8rem;
+          padding-bottom: 14.4rem;
         }
 
         @include hover {

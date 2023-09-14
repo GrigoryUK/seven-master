@@ -1,6 +1,7 @@
-import Inputmask from "inputmask"
+
 import $ from 'jquery'
 import { linksRelocation } from '../base/relocation'
+import { maskPhone } from '../base/utils'
 
 export function ContactScripts() {
   const container = document.querySelector('.pageContact');
@@ -12,11 +13,7 @@ export function ContactScripts() {
   }
 }
 
-function maskPhone() {
-  let tel = document.querySelectorAll('input[type="tel"]');
-  let telMask = new Inputmask("+7 (999) 999-99-99");
-  telMask.mask(tel);
-}
+
 
 function validate() {
   const form = $('.data-form');
