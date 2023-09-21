@@ -41,7 +41,11 @@
       width: 100%;
 
       &:not(:first-child) {
-        margin-top: -3%;
+        margin-top: -2%;
+
+        @include tablet {
+          margin-top: -3%;
+        }
       }
     }
 
