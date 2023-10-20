@@ -57,6 +57,7 @@ video {
 
 a {
   text-decoration: none;
+  color: var(--black);
 }
 
 a,
@@ -293,4 +294,5 @@ h5,
 h6 {
   margin: 0;
   font-weight: 700;
+  line-height: 1.5;
 }

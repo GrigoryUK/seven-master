@@ -151,6 +151,7 @@
     .hashtag {
       font-size: 1.8rem;
       font-style: normal;
+      text-transform: uppercase;
       font-weight: 400;
       line-height: 160%;
       opacity: 0.7;
@@ -291,6 +292,7 @@
 
     &__image {
       height: auto;
+      display: flex;
       width: 100%;
     }
   }

@@ -178,6 +178,7 @@
 
         input {
           outline: none;
+          padding: 0;
           border: none;
           border-bottom: 1.7rem solid var(--black);
           border-radius: 0;
@@ -209,12 +210,12 @@
           }
 
           &::placeholder {
-            opacity: 0.5;
+            color: var(--gray-600);
           }
 
           @include hover {
             &::placeholder {
-              opacity: 0.35;
+              color: var(--gray-400);
             }
           }
         }

@@ -78,17 +78,22 @@
   }
 
   &__logo {
+    a {
+      display: flex;
+    }
     svg {
       fill: var(--white);
-      width: 18.9rem;
-      max-height: 2.9rem;
+      min-width: 18.9rem;
+      max-width: 18.9rem;
 
       @include tablet {
-        width: 18rem;
+        min-width: 18rem;
+        max-width: 18rem;
       }
 
       @include mobile {
-        width: 13rem;
+        min-width: 13rem;
+        max-width: 13rem;
       }
     }
   }
@@ -235,10 +240,14 @@
       width: 2.4rem;
       position: relative;
 
+      @include mobile {
+        margin-top: 0.15rem;
+      }
+
       &__line {
         width: 100%;
         position: absolute;
-        height: 0.15rem;
+        height: 1.5px;
         background: var(--white);
         left: 50%;
         top: 36%;

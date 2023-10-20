@@ -61,7 +61,7 @@
         opacity: 1;
 
         .two-line {
-          animation: animateThis 0.6s ease-in-out;
+          animation: animateThis 0.7s ease-in-out;
           animation-fill-mode: forwards;
         }
       }
@@ -112,6 +112,9 @@
         @keyframes animateThis {
           0% {
             opacity: 0;
+          }
+          50% {
+            opacity: 1;
           }
           100% {
             width: 100%;
@@ -380,7 +383,7 @@
         }
 
         &::placeholder {
-          opacity: 0.5;
+          color: var(--gray-600);
         }
 
         @include mobile {
@@ -391,7 +394,7 @@
 
         @include hover {
           &::placeholder {
-            opacity: 0.35;
+            color: var(--gray-400);
           }
         }
       }
@@ -411,7 +414,7 @@
           color: var(--red-800);
 
           &::placeholder {
-            color: var(--red-800);
+            color: var(--red-800) !important;
           }
           border-color: var(--red-800);
         }
@@ -422,13 +425,42 @@
         }
 
         &::placeholder {
-          opacity: 0.5;
+          color: var(--gray-600);
         }
 
         @include hover {
           &::placeholder {
-            opacity: 0.35;
+            color: var(--gray-400);
           }
+        }
+      }
+    }
+
+    &--info {
+      text-align: left;
+
+      @include mobile {
+        display: none;
+      }
+
+      h4 {
+        margin-bottom: 1rem;
+        font-family: var(--font-primary);
+        font-size: 2.4rem;
+        font-weight: 400;
+        line-height: 1.6;
+      }
+
+      p {
+        font-size: 2rem;
+      }
+
+      a {
+        font-size: 2rem;
+        color: var(--gray-500);
+
+        @include hover {
+          color: var(--black);
         }
       }
     }
